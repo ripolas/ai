@@ -54,8 +54,8 @@ public void setup() {
     ball.add(new Ball(ballspawn, i));
     player.add(new Player(player1spawn, true, i, 1));
     player2.add(new Player(player2spawn, false, i, 2));
-    player.get(i).loadAI();
-    player2.get(i).loadAI();
+    //player.get(i).loadAI();
+    //player2.get(i).loadAI();
   }
   frameRate(1000);
 }
@@ -620,8 +620,8 @@ class Player {
     vel.add(new PVector(1, 0));
   }
   public void loadAI() {
-    String[] tst = loadStrings("weights.txt");
-    String[] tst2 = loadStrings("biases.txt");
+    String[] tst = loadStrings("data/weights.txt");
+    String[] tst2 = loadStrings("data/biases.txt");
     String t = tst[0];
     String t2 = tst2[0];
     String [] a = t.split("`");

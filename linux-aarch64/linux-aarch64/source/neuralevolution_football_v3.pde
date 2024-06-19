@@ -35,8 +35,8 @@ void setup() {
     ball.add(new Ball(ballspawn, i));
     player.add(new Player(player1spawn, true, i, 1));
     player2.add(new Player(player2spawn, false, i, 2));
-    player.get(i).loadAI();
-    player2.get(i).loadAI();
+    //player.get(i).loadAI();
+    //player2.get(i).loadAI();
   }
   frameRate(1000);
 }

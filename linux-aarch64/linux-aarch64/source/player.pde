@@ -295,8 +295,8 @@ class Player {
     vel.add(new PVector(1, 0));
   }
   void loadAI() {
-    String[] tst = loadStrings("weights.txt");
-    String[] tst2 = loadStrings("biases.txt");
+    String[] tst = loadStrings("data/weights.txt");
+    String[] tst2 = loadStrings("data/biases.txt");
     String t = tst[0];
     String t2 = tst2[0];
     String [] a = t.split("`");
